@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "خلفيات الكرة",
+    "slug": "walpaper",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/store_icon.png",
+    "scheme": "mobile",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/store_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D0D0D"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "لحفظ الخلفيات في معرض الصور",
+        "NSPhotoLibraryAddUsageDescription": "لإضافة الخلفيات إلى معرض الصور"
+      }
+    },
+    "android": {
+      "package": "com.abderrafia.walpaper",
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-image-picker",
+      "expo-media-library",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-8908825045510893~2612579836",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "userTrackingUsageDescription": "يُستخدم هذا لعرض إعلانات ملائمة لك"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "68459bc5-5aff-4ee8-a564-e2f185c200c5"
+      }
+    }
+  }
+}
